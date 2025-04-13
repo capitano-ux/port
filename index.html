@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Madhav Nayak's personal website. Learn about my skills, journey, and get in touch!">
+  <title>About Madhav Nayak</title>
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body class="light">
+  <!-- Sidebar with Profile Pic -->
+  <aside class="sidebar">
+    <img src="me.png" alt="Madhav Nayak" class="profile-pic">
+    <h2>Madhav Nayak</h2>
+    <p class="tagline">Aspiring Chartered Accountant | Tech Enthusiast</p>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" aria-label="Toggle dark mode">
+      <span id="toggle-icon">🌙</span>
+    </button>
+
+    <!-- Quick Access Navigation -->
+    <nav class="quick-access">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+      <h1>Welcome to My World</h1>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        [Insert your bio here. Example: I'm Madhav Nayak, a budding developer from [Your City]. I specialize in crafting interactive web experiences using HTML, CSS, and JavaScript. When I'm not coding, you can find me reading sci-fi novels or tinkering with new tech gadgets.]
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills & Interests</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>[Add another skill, e.g., Python, React]</li>
+        <li>[Add a hobby, e.g., Photography]</li>
+      </ul>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap">
+      <h2>My Journey</h2>
+      <div class="timeline">
+        <div class="timeline-item" data-year="2020">
+          <div class="timeline-content">
+            <h3>Started Learning to Code</h3>
+            <p>Discovered HTML and CSS, built my first webpage.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-year="2022">
+          <div class="timeline-content">
+            <h3>Mastered JavaScript</h3>
+            <p>Created interactive projects and learned modern frameworks.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-year="2024">
+          <div class="timeline-content">
+            <h3>Launched This Website</h3>
+            <p>Showcased my skills and connected with others.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-year="2025">
+          <div class="timeline-content">
+            <h3>Future Goals</h3>
+            <p>[Add your goal, e.g., Build a startup, contribute to open source]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="form-status"></p>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="script2.js"></script>
+</body>
+</html>
