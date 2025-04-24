@@ -50,11 +50,24 @@ Apart from books, integrity, determination, and curiosity are important to me. W
     <!-- Skills Section -->
     <section id="skills">
       <h2>Skills & Interests</h2>
-      <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>[Add another skill, e.g., Python, React]</li>
-        <li>[Add a hobby, e.g., Photography]</li>
-      </ul>
+      <div class="skills-tabs">
+        <button class="tab-button active" data-tab="technical">Technical</button>
+        <button class="tab-button" data-tab="interests">Interests</button>
+      </div>
+      <div class="tab-content">
+        <div class="tab-pane active" id="technical">
+          <div class="skills-grid">
+            <div class="skill-card">HTML, CSS, JavaScript</div>
+            <div class="skill-card">Python</div>
+          </div>
+        </div>
+        <div class="tab-pane" id="interests">
+          <div class="skills-grid">
+            <div class="skill-card">Photography</div>
+            <div class="skill-card">[Add hobby, e.g., Gaming]</div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Roadmap Section -->

@@ -156,33 +156,79 @@ section {
   max-width: 800px;
   margin: 40px auto;
 }
-
-h2 {
-  font-size: 2em;
+.skills-tabs {
+  display: flex;
+  gap: 10px;
   margin-bottom: 20px;
-  border-bottom: 2px solid #333;
-  display: inline-block;
 }
 
-body.dark h2 {
-  border-color: #fff;
-}
-
-ul {
-  list-style: none;
-}
-
-ul li {
+.tab-button {
+  padding: 10px 20px;
+  border: none;
   background: #e0e0e0;
-  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark .tab-button {
+  background: #555;
+  color: #fff;
+}
+
+.tab-button.active, .tab-button:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+body.dark .tab-button.active, body.dark .tab-button:hover {
+  background: #4dabf7;
+}
+
+.tab-content {
+  min-height: 100px;
+}
+
+.tab-pane {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.tab-pane.active {
+  display: block;
+  opacity: 1;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.skill-card {
+  background: #fff;
   padding: 10px;
   border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-body.dark ul li {
+body.dark .skill-card {
   background: #444;
 }
 
+/* Responsive */
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .skills-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 /* Roadmap Timeline */
 .timeline {
   position: relative;
